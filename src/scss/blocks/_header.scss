@@ -1,0 +1,41 @@
+.header {
+  padding: 35px 0;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  @include laptopXS {
+    display: flex;
+  }
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  padding-right: clamp(2rem, -23rem + 40vw, 7rem);
+  @include laptopXS {
+    display: none;
+  }
+}
+
+.header__link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.header__btns {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  @include tablet {
+    display: none;
+  }
+}

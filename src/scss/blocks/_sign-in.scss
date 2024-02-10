@@ -1,0 +1,20 @@
+.sign-in {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+
+  /* Normal Text - 16pt - Regular */
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 11px 35px;
+  font-weight: 600;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+
+  &:hover {
+    background-color: var(--primary);
+    color: rgb(14, 14, 44);
+  }
+  &:active {
+    transform: translateY(5px);
+  }
+}

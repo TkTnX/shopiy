@@ -1,0 +1,11 @@
+@mixin laptopXS() {
+  @media (max-width: 1083px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}

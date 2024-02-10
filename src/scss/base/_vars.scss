@@ -1,0 +1,28 @@
+:root {
+  --container-width: 1200px;
+  --container-padding: 15px;
+  --font-weight: 400;
+
+  --font-main: "Montserrat", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --page-bg: #0e0e2c;
+  --primary: #ffbe0b;
+  --primary-shade: #3e3125;
+  --secondary: #3a86ff;
+  --secondary-shade: #172656;
+  --accent1: #ff006e;
+  --accent2: #fb5607;
+  --accent3: #8338ec;
+  --accent1-shade: #3e0b39;
+  --accent2-shade: #3d1c25;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}
