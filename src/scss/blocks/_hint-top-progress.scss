@@ -1,0 +1,53 @@
+.hint-progress {
+  position: absolute;
+  z-index: 3;
+  right: -30px;
+  top: 45%;
+  transform: translateY(-50%);
+  display: grid;
+  padding: 28px 0;
+
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--page-bg);
+
+  width: 192px;
+  text-align: center;
+
+  img {
+    padding-bottom: 10px;
+    justify-self: center;
+  }
+  @include screenL {
+    top: 55%;
+    right: 0;
+  }
+  @include laptopL {
+    top: auto;
+    bottom: 0;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.hint-progress__title {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 5px;
+}
+.hint-progress__desc {
+  padding-bottom: 21px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--white-shade);
+}
+.hint-progress_btn {
+  max-width: 120px;
+  margin: 0 auto;
+  color: var(--white);
+  padding: 7px 30px;
+  background-color: var(--secondary);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}

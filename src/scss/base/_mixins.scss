@@ -1,3 +1,20 @@
+@mixin screenXS() {
+  @media (max-width: 1639px) {
+    @content;
+  }
+}
+@mixin screenL() {
+  @media (max-width: 1234px) {
+    @content;
+  }
+}
+
+@mixin laptopL() {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
 @mixin laptopXS() {
   @media (max-width: 1083px) {
     @content;
@@ -6,6 +23,11 @@
 
 @mixin tablet() {
   @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phoneXL() {
+  @media (max-width: 470px) {
     @content;
   }
 }
