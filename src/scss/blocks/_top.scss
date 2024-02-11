@@ -10,7 +10,7 @@
     width: 46px;
     height: 46px;
 
-    background-image: url("./../../img/decor/3.svg");
+    background-image: url("./../img/decor/3.svg");
     background-repeat: no-repeat;
     @include laptopL {
       top: 80px;
@@ -72,7 +72,7 @@
     width: 33px;
     height: 36px;
 
-    background-image: url("./../../img/decor/2.svg");
+    background-image: url("./../img/decor/2.svg");
     background-repeat: no-repeat;
   }
   &::before {
@@ -86,7 +86,7 @@
     width: 33px;
     height: 36px;
 
-    background-image: url("./../../img/decor/1.svg");
+    background-image: url("./../img/decor/1.svg");
     background-repeat: no-repeat;
     @include phoneXL {
       top: -20px;
@@ -131,7 +131,7 @@
   position: absolute;
   width: 693px;
   height: 627px;
-  background-image: url("./../../img/top/title.png");
+  background-image: url("./../img/top/title.png");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -199,7 +199,7 @@
     width: 33px;
     height: 36px;
 
-    background-image: url("./../../img/icons/email.svg");
+    background-image: url("./../img/icons/email.svg");
     @include phoneXL {
       margin-top: 18px;
     }
@@ -236,7 +236,7 @@
     padding: 15px;
     border-radius: 100px;
 
-    background-image: url("./../../img/icons/check.svg");
+    background-image: url("./../img/icons/check.svg");
     background-repeat: no-repeat;
     background-position: center;
     @include tablet {
