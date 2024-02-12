@@ -48,6 +48,9 @@
     flex-direction: column-reverse;
     max-height: unset;
   }
+  @include phoneXL {
+    display: none;
+  }
 }
 
 .hint-video__title {

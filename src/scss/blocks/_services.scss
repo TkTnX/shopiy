@@ -1,0 +1,49 @@
+.services {
+  margin-top: 110px;
+}
+
+.services__text {
+  max-width: 633px;
+}
+
+.services__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include laptopL {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.services__title {
+}
+.services__achivments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 70px;
+}
+
+.services__achivments-item {
+  .services__achivments-num--orange,
+  .services__achivments-num--yellow {
+    font-size: 38px;
+    font-weight: 700;
+  }
+}
+.services__achivments-num--yellow {
+  color: var(--primary);
+}
+.services__achivments-num--orange {
+  color: var(--accent2);
+}
+.services__achivments-desc {
+}
+
+.separation-line {
+  height: 80px;
+  width: 1px;
+  background-color: var(--white-shade2);
+}
