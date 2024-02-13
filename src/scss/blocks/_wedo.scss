@@ -1,0 +1,25 @@
+.weDo {
+  margin-top: 116px;
+}
+
+.weDo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  @include laptopL {
+    flex-direction: column;
+  }
+}
+.weDo__text {
+  max-width: 533px;
+}
+
+.weDo__title {
+  padding-bottom: 35px;
+}
+
+.weDo__desc {
+  font-size: 16px;
+  line-height: 1.8;
+}

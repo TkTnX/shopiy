@@ -1,0 +1,54 @@
+.weDo__categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @include phoneXL {
+    grid-template-columns: 1fr;
+  }
+}
+.weDo__category {
+  max-width: 267px;
+  border-radius: 10px;
+  padding: 24px 22px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: var(--hover-bg);
+
+    .weDo__img {
+      .weDo__svg-1,
+      .weDo__svg-2,
+      .weDo__svg-3,
+      .weDo__svg-4 {
+        path {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.weDo__img {
+  padding-bottom: 31px;
+  svg {
+    width: 73px;
+    height: 63px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  .weDo__svg-1 {
+    background-color: var(--primary-shade);
+  }
+  .weDo__svg-2 {
+    background-color: var(--secondary-shade);
+  }
+  .weDo__svg-3 {
+    background-color: var(--accent1-shade);
+  }
+  .weDo__svg-4 {
+    background-color: var(--accent2-shade);
+  }
+}
+.weDo__category-title {
+  padding-bottom: 20px;
+}
