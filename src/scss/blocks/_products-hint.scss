@@ -1,0 +1,24 @@
+.products-hint {
+  padding: 37px 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: -100px;
+  bottom: -100px;
+  max-width: 280px;
+  max-height: 315px;
+  img {
+    max-width: 110px;
+    max-height: 141px;
+  }
+  @include screenXS {
+    left: unset;
+    bottom: unset;
+  }
+  @include tablet {
+    bottom: 100px;
+  }
+  @include phoneXL {
+    bottom: 50px;
+  }
+}

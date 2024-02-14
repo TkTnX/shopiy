@@ -1,0 +1,107 @@
+.products {
+  margin-top: 200px;
+}
+
+.products__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  @include laptopL {
+    flex-direction: column;
+  }
+}
+.products__text {
+  max-width: 533px;
+}
+
+.products__title {
+  padding-bottom: 92px;
+}
+
+.products__img-wrapper {
+  position: relative;
+  img {
+    @include screenL {
+      width: 529px;
+      height: 486px;
+    }
+    @include tablet {
+      width: 429px;
+      height: 386px;
+    }
+    @include phoneXL {
+      width: 329px;
+      height: 286px;
+    }
+  }
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 544px;
+    height: 660px;
+    z-index: -1;
+
+    border-radius: 15px;
+    background-color: var(--secondary);
+
+    left: 43%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-repeat: no-repeat;
+    @include screenL {
+      width: 444px;
+      height: 560px;
+    }
+    @include tablet {
+      width: 344px;
+      height: 460px;
+      top: 30%;
+      left: 50%;
+    }
+    @include phoneXL {
+      width: 244px;
+      height: 360px;
+    }
+  }
+  @include laptopL {
+    padding-bottom: 200px;
+  }
+}
+.products__item-title {
+  padding-bottom: 22px;
+  position: relative;
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -50px;
+    top: -2px;
+    width: 17px;
+    height: 16px;
+
+    padding: 15px;
+    border-radius: 100px;
+    background-color: var(--secondary);
+
+    background-image: url("./../img/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include tablet {
+      left: 0;
+    }
+  }
+  @include tablet {
+    padding-left: 50px;
+  }
+}
+
+.products__item-desc {
+  padding-bottom: 48px;
+  @include tablet {
+    padding-left: 50px;
+  }
+}
