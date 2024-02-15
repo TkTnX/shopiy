@@ -1,14 +1,43 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+  margin-top: clamp(3.125rem, 0.057rem + 15.34vw, 11.563rem);
+  padding-bottom: 90px;
+  font-size: 32px;
+  background-color: unset;
 
-	h1 {
-		font-size: 32px;
-	}
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
+    flex-wrap: wrap;
+    @include laptopXS {
+      justify-content: center;
+    }
+    @include phoneXL {
+      flex-direction: column;
+    }
+  }
+  .header__list {
+    padding-right: 0;
+    @include laptopXS {
+      display: flex;
+    }
+    @include phoneXL {
+      flex-direction: column;
+    }
+  }
+}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+.socials__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.25rem, 0.773rem + 2.39vw, 2.563rem);
+  flex-wrap: wrap;
+  .socials__item {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }

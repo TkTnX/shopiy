@@ -1,0 +1,59 @@
+.process {
+  margin-top: 50px;
+}
+
+.process__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include laptopL {
+    flex-direction: column;
+  }
+}
+.process__text {
+  max-width: 533px;
+}
+
+.process__title {
+  padding-bottom: 34px;
+}
+
+.process__desc {
+}
+
+.process__img-wrapper {
+  position: relative;
+  &::before {
+    content: "";
+
+    z-index: -1;
+
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    width: 544px;
+    height: 564px;
+
+    border-radius: 20px;
+    background-color: var(--primary);
+    background-repeat: no-repeat;
+    @include tablet {
+      max-width: 444px;
+      max-height: 464px;
+    }
+    @include phoneXL {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+  img {
+    @include tablet {
+      max-width: 444px;
+      max-height: 636px;
+    }
+    @include phoneXL {
+      max-width: 300px;
+      max-height: 500px;
+    }
+  }
+}

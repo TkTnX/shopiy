@@ -1,0 +1,38 @@
+.contacts {
+  text-align: center;
+  margin-top: 129px;
+}
+
+.contacts__wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.contacts__title {
+  padding-bottom: 20px;
+}
+
+.contacts__desc {
+  padding-bottom: 50px;
+}
+
+.contacts__form {
+  @include phoneXL {
+    display: grid;
+    gap: 40px;
+  }
+}
+
+.contacts__input {
+  padding: 0 25px;
+  @include phoneXL {
+    border-bottom: 1px solid var(--white-shade);
+    padding: 20px;
+    padding-left: 67px;
+  }
+}
+
+.contacts__btn {
+  @include btn();
+  padding: 10px 15px;
+}

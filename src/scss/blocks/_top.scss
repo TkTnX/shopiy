@@ -1,6 +1,7 @@
 .top {
   padding-top: 135px;
   position: relative;
+  overflow: hidden;
   &::before {
     content: "";
 
